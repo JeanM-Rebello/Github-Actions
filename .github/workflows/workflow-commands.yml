@@ -19,3 +19,19 @@ jobs:
             
             - name: Setting an notice message with params
               run: echo "::notice title:Notice title,file=app.js,line=2,endLine=3,col=5,endColumn=7::Faltando Ponto e Virgula"
+            
+            - name: Group of logs
+              run: |
+                echo "::group::Meu grupo titulo"
+                echo "Teste1"
+                echo "Teste2"
+                echo "Teste3"
+                echo "Teste4"
+                echo "Teste5"
+                echo "::endgroup::"
+
+            - name: Masking a value
+              run: echo "::add-mask::Secret String"
+
+            - name: Echo a secret
+              run: echo "Secret String"
