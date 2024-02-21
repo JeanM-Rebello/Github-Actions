@@ -38,7 +38,7 @@ jobs:
             - name: Python shell
               shell: python
               run: |
-                import plataform
+                import platform
                 print("Hello World")
-                print(plataform)
-                print(plataform.processor())
+                print(platform)
+                print(platform.processor())
